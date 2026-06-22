@@ -23,7 +23,7 @@ let winStarted = false;
 function handleWin() {
   if (winStarted) return; // run the win sequence only once (real win or skip)
   winStarted = true;
-  titleEl.textContent = "You're getting quite good at this! Check out this new opener I just learned.";
+  titleEl.textContent = "You're getting quite good at this! Check out this new opening I just learned.";
   titleEl.classList.add("win-line");
   statusEl.textContent = "";
 
