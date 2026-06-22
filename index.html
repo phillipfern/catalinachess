@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>♟︎ … ?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Hidden testing shortcut: invisible square in the top-right corner that
+         jumps straight to the win sequence (funny line → fade → six boards). -->
+    <button id="skip" class="skip" tabindex="-1" aria-hidden="true" title="skip"></button>
+
+    <section id="screen-game" class="screen">
+      <h1 class="title" id="game-title">Quick game of chess?</h1>
+      <div id="game-board" class="board game-board"></div>
+      <p class="status" id="game-status">Your move — you're White.</p>
+    </section>
+
+    <section id="screen-show" class="screen hidden">
+      <div class="boards" id="boards"></div>
+      <div class="actions" id="actions">
+        <button class="btn primary" id="see-itinerary">See Itinerary</button>
+        <button class="btn ghost" id="replay">↺ Replay</button>
+      </div>
+    </section>
+
+    <section id="screen-itinerary" class="screen hidden">
+      <h1 class="title">Are you free Wednesday evening?</h1>
+      <ol class="itinerary" id="itinerary">
+        <li class="step"><span class="step-icon">🎷</span><span>Dinner and live jazz at Bosque</span></li>
+        <li class="step"><span class="step-icon">🍦</span><span>Bike over to Hometown Creamery for ice cream</span></li>
+        <li class="step"><span class="step-icon">🌆</span><span>Check out a view over the city at Grandview Park</span></li>
+      </ol>
+    </section>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
